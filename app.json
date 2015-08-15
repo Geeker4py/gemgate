@@ -1,0 +1,22 @@
+{
+  "name": "Gemgate",
+  "description": "Implement your private gem storage with heroku and S3",
+  "repository": "https://github.com/frozenfung/gemgate",
+  "env": {
+    "GEMGATE_AUTH": {
+      "description": "User and password to require for basic auth, joined by :"
+    },
+    "AWS_ACCESS_KEY_ID":  {
+      "description": "Your AWS access key for communicating with S3."
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Your AWS secret key for communicating with S3."
+    },
+    "S3_BUCKET": {
+      "description": "Your bucket name."
+    },
+    "S3_KEY_PREFIX": {
+      "description": "Probably random string to prefix file/directory keys with."
+    }
+  }
+}

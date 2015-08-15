@@ -2,6 +2,9 @@
 
 gemgate receives built gems and makes them available via S3.
 
+## Deploy Button
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 Example use:
 
 ```bash
