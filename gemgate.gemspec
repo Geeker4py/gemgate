@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "sinatra", "~> 1.3.2"
   gem.add_dependency "fog", "~> 1.5.0"
+  gem.add_dependency "dotenv"
 
   gem.add_development_dependency "rack-test"
   gem.add_development_dependency "rake"
