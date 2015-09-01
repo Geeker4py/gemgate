@@ -11,6 +11,7 @@ module Gemgate
       ENV[name] or raise "ENV[#{name}] must be set"
     end
 
+    use Gemgate::Bartender
 
     configure :test do
       enable :raise_errors

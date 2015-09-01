@@ -22,10 +22,18 @@ module Gemgate
         create(path, body)
       end
 
+      def get_path
+        File.join(root_path, env!('S3_BUCKET'), env!("S3_KEY_PREFIX"))
+      end
+
       private
 
       def env!(name)
         @env[name] or raise "ENV[#{name}] must be set"
+      end
+
+      def root_path
+        "https://s3.amazonaws.com"
       end
 
       def prefix(path)
