@@ -1,4 +1,6 @@
 require "fog"
+require "faraday"
+require "faraday_middleware"
 
 require "gemgate/bartender"
 require "gemgate/gem_files"
@@ -8,5 +10,10 @@ require "gemgate/specs_index"
 require "gemgate/quick_marshal_specs"
 require "gemgate/repository"
 require "gemgate/web"
+require "gemgate/gem_list_merge"
+require "gemgate/rubygems_dependency"
+require "gemgate/disk_cache"
+require "gemgate/gem_version"
+require "gemgate/gem_version_controll"
 
 require "gemgate/storage/s3"
